@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 
 function SkillModal({ skill, onClose }) {
   const skillDescriptions = {
