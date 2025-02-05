@@ -27,7 +27,7 @@ function Projects() {
 
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 mt-12">
-      <div className="max-w-4xl mx-auto p-8">
+      <div className="max-w-4xl mx-auto p-8 bg-white shadow-md rounded-lg p-8">
         <h1 className="text-4xl font-bold text-gray-800 mb-12 text-center">
           My Projects
         </h1>
@@ -36,7 +36,7 @@ function Projects() {
           {projects.map((project, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-xl content-center"
+              className="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-xl content-center"
             >
               <div className="p-6">
                 <h2 className="text-2xl font-bold text-blue-600 mb-4">
@@ -65,7 +65,7 @@ function Projects() {
                     href={project.githubLink} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors"
+                    className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors structure1"
                   >
                     GitHub
                   </a>
@@ -73,7 +73,7 @@ function Projects() {
                     href={project.liveLink} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+                    className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors structure1"
                   >
                     Live Demo
                   </a>

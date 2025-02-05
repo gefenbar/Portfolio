@@ -25,13 +25,13 @@ function Home() {
         <div className="flex justify-center space-x-6 mb-8">
           <a 
             href="/Gefen_Bar_Resume.pdf" 
-            className="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition-colors duration-300"
+            className="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition-colors duration-300 structure1"
           >
             Download CV
           </a>
           <a 
             href="/contact" 
-            className="px-6 py-3 border-2 border-blue-500 text-blue-500 rounded-lg hover:bg-blue-500 hover:text-white transition-colors duration-300"
+            className="px-6 py-3 border-2 border-blue-500 text-blue-500 rounded-lg hover:bg-blue-500 hover:text-white transition-colors duration-300 structure1"
           >
             Contact Me
           </a>
@@ -57,7 +57,7 @@ function Home() {
           {skills.map((skill) => (
           <span 
             key={skill} 
-            className="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-sm hover:bg-gray-300 transition-colors duration-300 cursor-pointer"
+            className="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-sm hover:bg-gray-300 transition-colors duration-300 cursor-pointer structure1"
             onClick={() => setSelectedSkill(skill)}
           >
             {skill}
