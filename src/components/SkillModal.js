@@ -1,84 +1,107 @@
-
 function SkillModal({ skill, onClose }) {
   const skillDescriptions = {
-    'JavaScript': {
-      description: "A versatile programming language that enables interactive web experiences.",
+    JavaScript: {
+      description:
+        "A versatile programming language that enables interactive web experiences.",
       expertise: "Advanced",
-      projects: ["Portfolio Website", "WordPress Plugin", "Interactive Web Applications"],
-      icon: "💻"
+      projects: [
+        "Portfolio Website",
+        "WordPress Plugin",
+        "Interactive Web Applications",
+      ],
+      icon: "💻",
     },
-    'HTML5': {
-      description: "The latest version of HTML, providing semantic structure to web content.",
+    HTML5: {
+      description:
+        "The latest version of HTML, providing semantic structure to web content.",
       expertise: "Expert",
       projects: ["Responsive Websites", "Web Components"],
-      icon: "🌐"
+      icon: "🌐",
     },
-    'CSS3': {
-      description: "Styling language for creating beautiful, responsive web designs.",
+    CSS3: {
+      description:
+        "Styling language for creating beautiful, responsive web designs.",
       expertise: "Advanced",
       projects: ["Tailwind CSS Projects", "Custom Styling"],
-      icon: "🎨"
+      icon: "🎨",
     },
-    'React': {
-      description: "A powerful JavaScript library for building user interfaces.",
+    React: {
+      description:
+        "A powerful JavaScript library for building user interfaces.",
       expertise: "Advanced",
       projects: ["Personal Portfolio", "Dynamic Web Applications"],
-      icon: "⚛️"
+      icon: "⚛️",
     },
-    'Python': {
-      description: "Versatile programming language used for web development, data science, and more.",
+    Python: {
+      description:
+        "Versatile programming language used for web development, data science, and more.",
       expertise: "Intermediate",
       projects: ["Backend Services", "Data Analysis Scripts"],
-      icon: "🐍"
+      icon: "🐍",
     },
-    'Git': {
-      description: "Version control system for tracking and managing code changes.",
+    Git: {
+      description:
+        "Version control system for tracking and managing code changes.",
       expertise: "Advanced",
       projects: ["GitHub Repositories", "Collaborative Development"],
-      icon: "🔀"
+      icon: "🔀",
     },
-    'SQL': {
-      description: "Standard language for managing and querying relational databases.",
+    SQL: {
+      description:
+        "Standard language for managing and querying relational databases.",
       expertise: "Intermediate",
       projects: ["Database Design", "Data Management"],
-      icon: "📊"
+      icon: "📊",
     },
-    'C#': {
-      description: "Powerful programming language for Windows and game development.",
+    "C#": {
+      description:
+        "Powerful programming language for Windows and game development.",
       expertise: "Beginner",
       projects: ["Learning Projects"],
-      icon: "🎮"
+      icon: "🎮",
     },
-    'Linux': {
-      description: "Open-source operating system known for its flexibility and power.",
+    Linux: {
+      description:
+        "Open-source operating system known for its flexibility and power.",
       expertise: "Intermediate",
       projects: ["Server Management", "Development Environments"],
-      icon: "🐧"
+      icon: "🐧",
     },
-    'PHP': {
+    PHP: {
       description: "Server-side scripting language for web development.",
       expertise: "Intermediate",
       projects: ["WordPress Development", "Backend Services"],
-      icon: "🌟"
-    }
+      icon: "🌟",
+    },
   };
 
   const skillInfo = skillDescriptions[skill] || {
     description: "Skill details not available.",
     expertise: "N/A",
     projects: [],
-    icon: "❓"
+    icon: "❓",
   };
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
       <div className="bg-white rounded-xl shadow-2xl max-w-md w-full p-8 relative transform transition-all">
-        <button 
-          onClick={onClose} 
+        <button
+          onClick={onClose}
           className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 transition-colors"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M6 18L18 6M6 6l12 12"
+            />
           </svg>
         </button>
 
@@ -92,15 +115,19 @@ function SkillModal({ skill, onClose }) {
               <h3 className="font-semibold text-gray-700">Expertise Level</h3>
               <div className="flex items-center mt-2">
                 <div className="w-full bg-gray-200 rounded-full h-2.5">
-                  <div 
+                  <div
                     className={`h-2.5 rounded-full ${
-                      skillInfo.expertise === 'Advanced' ? 'bg-green-500 w-full' :
-                      skillInfo.expertise === 'Intermediate' ? 'bg-yellow-500 w-3/4' :
-                      'bg-red-500 w-1/2'
+                      skillInfo.expertise === "Advanced"
+                        ? "bg-green-500 w-full"
+                        : skillInfo.expertise === "Intermediate"
+                        ? "bg-yellow-500 w-3/4"
+                        : "bg-red-500 w-1/2"
                     }`}
                   ></div>
                 </div>
-                <span className="ml-2 text-sm text-gray-600">{skillInfo.expertise}</span>
+                <span className="ml-2 text-sm text-gray-600">
+                  {skillInfo.expertise}
+                </span>
               </div>
             </div>
 

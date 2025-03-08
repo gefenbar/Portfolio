@@ -6,7 +6,14 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+@media screen and (max-width: 768px) {
+.side-social-icon ul li{height: 30px;
+width: 150px;}
+.side-social-icon ul li svg{
+  width: 20px;
+  height: 20px;
+}
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

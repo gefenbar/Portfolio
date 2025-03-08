@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function About() {
   const experiences = [
@@ -10,8 +10,8 @@ function About() {
         "Developed dynamic web applications using modern web technologies",
         "Collaborated with cross-functional development teams",
         "Implemented responsive and performant front-end solutions",
-        "Contributed to project architecture and code quality"
-      ]
+        "Contributed to project architecture and code quality",
+      ],
     },
     {
       company: "Digitale",
@@ -21,8 +21,8 @@ function About() {
         "Created an AI-powered WordPress plugin",
         "Designed intuitive user interfaces",
         "Managed version control and documentation",
-        "Integrated complex front-end and back-end functionalities"
-      ]
+        "Integrated complex front-end and back-end functionalities",
+      ],
     },
     {
       company: "Art Division",
@@ -32,19 +32,19 @@ function About() {
         "Maintained and optimized company websites",
         "Implemented UI improvements and performance enhancements",
         "Conducted technical bug fixes and troubleshooting",
-        "Applied basic SEO best practices"
-      ]
+        "Applied basic SEO best practices",
+      ],
     },
     {
-        company: "Sapir College",
-        role: "IT Specialist",
-        period: "2018 - 2021",
-        responsibilities: [
-          "Provided technical support to teachers, students, and staff",
-          "Implemented exam management system training",
-          "Resolved technical issues across departments"
-        ]
-      }
+      company: "Sapir College",
+      role: "IT Specialist",
+      period: "2018 - 2021",
+      responsibilities: [
+        "Provided technical support to teachers, students, and staff",
+        "Implemented exam management system training",
+        "Resolved technical issues across departments",
+      ],
+    },
   ];
 
   const education = [
@@ -56,9 +56,9 @@ function About() {
         "Comprehensive curriculum covering software development, algorithms, and system design",
         "Developed strong foundation in programming and problem-solving",
         "Participated in multiple collaborative software projects",
-        "Maintained high academic performance"
-      ]
-    }
+        "Maintained high academic performance",
+      ],
+    },
   ];
 
   return (
@@ -75,8 +75,8 @@ function About() {
               Professional Experience
             </h2>
             {experiences.map((exp, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="mb-8 p-6 bg-gray-100 rounded-lg hover:shadow-md transition-shadow"
               >
                 <div className="flex justify-between items-center mb-4">
@@ -87,9 +87,7 @@ function About() {
                     {exp.period}
                   </span>
                 </div>
-                <h3 className="text-xl text-blue-600 mb-4">
-                  {exp.role}
-                </h3>
+                <h3 className="text-xl text-blue-600 mb-4">{exp.role}</h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-2">
                   {exp.responsibilities.map((resp, i) => (
                     <li key={i}>{resp}</li>
@@ -105,8 +103,8 @@ function About() {
               Education
             </h2>
             {education.map((edu, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="p-6 bg-blue-50 rounded-lg hover:shadow-md transition-shadow"
               >
                 <div className="flex justify-between items-center mb-4">
@@ -117,9 +115,7 @@ function About() {
                     {edu.period}
                   </span>
                 </div>
-                <h3 className="text-xl text-blue-600 mb-4">
-                  {edu.degree}
-                </h3>
+                <h3 className="text-xl text-blue-600 mb-4">{edu.degree}</h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-2">
                   {edu.highlights.map((highlight, i) => (
                     <li key={i}>{highlight}</li>
